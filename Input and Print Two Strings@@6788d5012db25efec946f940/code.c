@@ -5,6 +5,6 @@ int main(){
     scanf("%s",&wrd);
     printf("");
     scanf("%s",&str);
-    printf("You entered: %s",wrd "and","%s",str);
+    printf("You entered: %s",wrd "and %s",str);
     return 0;
 }
