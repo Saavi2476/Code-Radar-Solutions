@@ -2,9 +2,9 @@
 int main(){
     char wrd[100],str[100];
     printf("");
-    scanf("%s",&wrd);
+    scanf("%s",wrd);
     printf("");
-    scanf("%s",&str);
-    printf("You entered: %s and %s",wrd,str);
+    scanf("%s",str);
+    printf("You entered: %s and %s\n",wrd,str);
     return 0;
 }
