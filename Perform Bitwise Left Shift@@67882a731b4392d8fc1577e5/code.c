@@ -1,9 +1,7 @@
 #include <stdio.h>
 int main(){
-    unsigned int a,b;
-    scanf("%u",&a);
-    scanf("u",&b);
-    printf("%u\n",a<<2);
-    printf("%u\n",b<<2);
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("%d",a<<b);
     return 0;
 }
