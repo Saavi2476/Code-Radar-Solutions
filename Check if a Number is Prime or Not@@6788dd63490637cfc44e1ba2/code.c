@@ -8,7 +8,7 @@ int main(){
         return 0;
     }
     int i;
-    for(i=2;i<=num/2;i++){
+    for(i=2;i<=sqrt(num);i++){
         if(num%2==0){
             printf("Not Prime\n");
             return 0;
