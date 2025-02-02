@@ -6,13 +6,12 @@ int main(){
         for(int j=1; j<=i; j++){
             if((i+j)%2==1){
                 printf("1");
+                if(i==2 && j==1) printf(" ");
             }
             else{
                 printf("0");
+                if(i==2 && j==1) printf(" ");
             }
-        }
-        if(i==2){
-            printf(" ");
         }
         printf("\n");
     }
