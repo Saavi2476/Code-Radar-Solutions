@@ -6,20 +6,20 @@ int main(){
     switch(op){
         case '+':
             r=a+b;
-            printf("%d",r);
+            printf("%.2lf",r);
             break;
         case '-':
             r=a-b;
-            printf("%d",r);
+            printf("%.2lf",r);
             break;
         case '*':
             r=a*b;
-            printf("%d",r);
+            printf("%.2lf",r);
             break;
         case '/':
             if(b!=0){
                 r=a/b;
-                printf("%d",a/b);
+                printf("%.2lf",a/b);
             }
             break;
     }
