@@ -19,7 +19,7 @@ int main(){
         case '/':
             if(b!=0){
                 r=a/b;
-                printf("%.2lf",a/b);
+                printf("%.2lf",r);
             }
             else{
                 printf("Error: Division by zero");
