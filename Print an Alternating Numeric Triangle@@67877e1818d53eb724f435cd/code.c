@@ -7,6 +7,9 @@ int main(){
             if(j%2==1){
                 printf("1");
             }
+            else{
+                printf("0");
+            }
         }
         printf("\n");
     }
