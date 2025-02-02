@@ -1,19 +1,30 @@
 #include <stdio.h>
-#include<math.h>
-int main(){
-    int num;
-    scanf("%d",&num);
+#include<stdbool.h>
+bool isPrime(int num){
     if(num<=1){
-        printf("Not Prime\n");
-        return 0;
+        return false;
     }
-    int i;
-    for(i=2;i<=sqrt(num);i++){
-        if(num%2==0){
-            printf("Not Prime\n");
-            return 0;
+    if(num<=3){
+        return true;
+    }
+    if(num%2==0 || num%3==0){
+        return false;
+    }
+    for(int i=5; i*i<=num; i=i+6){
+        if(num%i==0 || num%(i+2)==0){
+            return false;
         }
     }
-    printf("Prime\n");
+    return true;
+}
+int main(){
+    int number;
+    scanf("%d",&number);
+    if(isPrime(number)){
+        printf("Prime\n");
+    }
+    else{
+        printf("Not Prime\n");
+    }
     return 0;
 }
