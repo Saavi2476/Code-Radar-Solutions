@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
     int decimal;
-    int size=16;
+    int size=4;
     scanf("%d",&decimal);
     if(decimal==0){
         printf("0");
