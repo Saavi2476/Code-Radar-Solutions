@@ -21,12 +21,12 @@ int main(){
                 r=a/b;
                 printf("%d\n",r);
             }
-            else{
-                printf("Error\n");
-            }
+            // else{
+            //     printf("Error\n");
+            // }
             break;
-        default:
-            printf("Error\n");
+        // default:
+        //     printf("Error\n");
     }
     return 0;
 }
