@@ -21,7 +21,12 @@ int main(){
                 r=a/b;
                 printf("%.2lf",a/b);
             }
+            else{
+                printf("Error: Division by zero");
+            }
             break;
+        default:
+            printf("Invalid operator");
     }
     return 0;
 }
