@@ -1,32 +1,32 @@
 #include <stdio.h>
 int main(){
-    double a,b,r;
+    int a,b,r;
     char op;
-    scanf("%lf %c %lf",&a,&op,&b);
+    scanf("%d %c %d",&a,&op,&b);
     switch(op){
         case '+':
             r=a+b;
-            printf("%.2lf",r);
+            printf("%d\n",r);
             break;
         case '-':
             r=a-b;
-            printf("%.2lf",r);
+            printf("%d\n",r);
             break;
         case '*':
             r=a*b;
-            printf("%.2lf",r);
+            printf("%d\n",r);
             break;
         case '/':
             if(b!=0){
                 r=a/b;
-                printf("%.2lf",r);
+                printf("%d\n",r);
             }
             else{
-                printf("Error: Division by zero");
+                printf("Error\n");
             }
             break;
         default:
-            printf("Invalid operator");
+            printf("Error\n");
     }
     return 0;
 }
