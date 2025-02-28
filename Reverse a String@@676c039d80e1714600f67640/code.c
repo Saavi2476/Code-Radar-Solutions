@@ -4,12 +4,11 @@ int main(){
     char str[100];
     scanf("%s",str);
     int len=strlen(str);
-    for(int i=0;i<j;i++){
-        for(int j=0;j=len-1;j--){
+    int i,j;
+    for(i=0;j=len-1;i<j;i++;j--){
         char temp=str[i];
         str[i]=str[j];
         str[j]=temp;
-        }
     }
     printf("%s\n",str);
     return 0;
