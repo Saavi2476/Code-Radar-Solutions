@@ -7,7 +7,7 @@ int main(){
     while(strg != 0){
         digit=strg%10;
         reverse=reverse*10+digit;
-        strg /= 10;
+        // strg /= 10;
     }
     printf("%s",string);
     return 0;
