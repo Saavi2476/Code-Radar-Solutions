@@ -1,5 +1,5 @@
 #include<stdio.h>
-void main(){
+int main(){
     char string[100],strg;
     int reverse=0,digit;
     scanf("%s",&strg);
