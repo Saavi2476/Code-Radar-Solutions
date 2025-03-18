@@ -12,6 +12,7 @@ int findOccurrence(int arr[], int size, int target, char mode){
             else{
                 left=mid-1;
             }
+        }
         else if(arr[mid]<target){
             left=mid+1;
         }
