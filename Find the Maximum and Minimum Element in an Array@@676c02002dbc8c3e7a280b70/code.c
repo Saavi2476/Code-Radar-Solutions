@@ -16,7 +16,7 @@ int main(){
             small=arr[i];
         }
     }
-    printf("%d \n",small);
-    printf("%d\n",large);
+    printf("%d ",small);
+    printf("%d",large);
     return 0;
 }
