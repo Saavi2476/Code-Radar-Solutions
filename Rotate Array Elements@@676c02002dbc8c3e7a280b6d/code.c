@@ -9,23 +9,26 @@ int main(){
     }
     scanf("%d",&k);
     k=k%n;
-    for(i=0;j=n-1;i<j;i++,j--){
+    j=n-1;
+    for(i=0;i<j;i++,j--){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
-    for(i=0;j=k-1;i<j;i++,j--){
+    j=k-1;
+    for(i=0;i<j;i++,j--){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
-    for(i=k;j=n-1;i<j;i++,j--){
+    j=n-1;
+    for(i=k;i<j;i++,j--){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
     for(i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d \n",arr[i]);
     }
     return 0;
 }
