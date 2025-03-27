@@ -17,7 +17,7 @@ int incrementToPrimeDigits(int N){
     int result=0,place=1;
     while(N>0){
         int digit=N%10;
-        int newDigit=newPrimeDigit(digit);
+        int newDigit=nextPrimeDigit(digit);
         result=newDigit*place+result;
         place*=10;
         N/=10;
