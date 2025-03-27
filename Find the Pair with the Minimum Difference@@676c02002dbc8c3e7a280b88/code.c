@@ -21,3 +21,13 @@ void findMinDifferencePair(int arr[], int n) {
     }
     printf("%d %d\n", num1, num2);
 }
+int main() {
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    findMinDifferencePair(arr, n);
+    return 0;
+}
