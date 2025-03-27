@@ -13,6 +13,6 @@ void trackPlayerRanks(int ranked[],int player[],int n,int m, int result[]){
         while(index>=0&&player[i]>=ranked[index]){
             index--;
         }
-        result[i]=(index==-1)?1:dense_rank[index];
+        result[i]=(index==-1)?1:dense_rank[index]+1;
     }
 }
