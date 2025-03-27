@@ -12,14 +12,13 @@ int main(){
     scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]){
-        }
-        if(isSorted(arr,n)){
-            printf("Sorted\n");
-        }
-        else{
-            printf("Not Sorted\n");
-        }
+        scanf("%d",&arr[i])
+    }
+    if(isSorted(arr,n)){
+        printf("Sorted\n");
+    }
+    else{
+        printf("Not Sorted\n");
     }
     return 0;
 }
