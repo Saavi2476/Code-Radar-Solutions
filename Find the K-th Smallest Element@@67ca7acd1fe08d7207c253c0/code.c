@@ -1,21 +1,26 @@
-#include<stdio.h>
-void selectionSort(int arr[], int n){
-    for(int i=0; i<n-1; i++){
-        int minIdx=i;
-        for(int j=0; j<n; j++){
-            if(arr[j]<arr[minIdx]){
-                minIdx=j;
+#include <stdio.h>
+void swap(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+void selectionSort(int arr[], int n, int k) {
+    for (int i = 0; i < k; i++) { 
+        int minIdx = i;
+        for (int j = i + 1; j < n; j++) {
+            if (arr[j] < arr[minIdx]) {
+                minIdx = j;
             }
         }
-        int temp=arr[i];
-        arr[i]=arr[minIdx];
-        arr[minIdx]=temp;
+        swap(&arr[i], &arr[minIdx]);
     }
 }
-int kthSmallest(int arr[], int n, int k){
-    if(k<1||k>n){
-        return -1;
+int kthSmallest(int arr[], int n, int k) {
+    if (k < 1 || k > n) {
+        return -1; 
     }
-    selectionSort(arr,n);
-    return arr[k-1];
+    selectionSort(arr, n, k); 
+    return arr[k - 1]; 
 }
+
+
