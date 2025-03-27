@@ -14,14 +14,14 @@ void caesarCipher(char message[], int shift, char encrypted[]){
     }
     encrypted[strlen(message)]='\0';
 }
-int main(){
-    char message[100],encrypted[100];
-    int shift;
-    scanf("%[^\n]",message);
-    getchar();
-    scanf("%d",&shift);
-    shift=(shift&26+26)%26;
-    caesarCipher(message,shift,encrypted);
-    printf("%s\n",encrypted);
-    return 0;
-}
+// int main(){
+//     char message[100],encrypted[100];
+//     int shift;
+//     scanf("%[^\n]",message);
+//     getchar();
+//     scanf("%d",&shift);
+//     shift=(shift&26+26)%26;
+//     caesarCipher(message,shift,encrypted);
+//     printf("%s\n",encrypted);
+//     return 0;
+// }
