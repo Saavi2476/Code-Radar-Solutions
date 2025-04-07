@@ -6,7 +6,7 @@ int sum(int num){
         num/=10;
        
     }
-    if(num<0){
+    if(sum<0){
         sum *= (-1);
     }
     return sum;
