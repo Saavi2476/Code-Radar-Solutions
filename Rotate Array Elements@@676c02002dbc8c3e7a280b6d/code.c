@@ -10,19 +10,19 @@ int main(){
     scanf("%d",&k);
     k=k%10;
     j=n-1;
-    for(i=0;i<j;i++;j--){
+    for(i=0;i<j;i++,j--){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
     j=k-1;
-    for(i=0;i<j;i++;j--){
+    for(i=0;i<j;i++,j--){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
     }
     j=n-1;
-    for(i=k;i<j;i++;j--){
+    for(i=k;i<j;i++,j--){
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
