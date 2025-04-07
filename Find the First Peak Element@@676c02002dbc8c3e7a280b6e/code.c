@@ -20,14 +20,16 @@ int main(){
         else if(i==n-1){
             if(arr[i]>arr[i-1]){
                 printf("%d\n",arr[i]);
+                return 0;
             }
-            return 0;
+            
         }
         else{
             if(arr[i]>arr[i-1]&&arr[i]>arr[i+1]){
                 printf("%d\n",arr[i]);
+                return 0;
             }
-            return 0;
+            
         }
     }
     printf("-1\n");
