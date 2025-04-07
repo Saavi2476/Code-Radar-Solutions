@@ -14,8 +14,8 @@ int main(){
         if(i==0){
             if(arr[i]>arr[i+1]){
                 printf("%d\n",arr[i]);
+                return 0;
             }
-            return 0;
         }
         else if(i==n-1){
             if(arr[i]>arr[i-1]){
