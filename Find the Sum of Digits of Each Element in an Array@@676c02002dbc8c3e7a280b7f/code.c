@@ -4,7 +4,7 @@ int sum(int num){
     while(num!=0){
         sum +=num % 10;
         num/=10;
-        if(num<0){
+        if(sum<0){
             sum *= (-1);
         }
     }
