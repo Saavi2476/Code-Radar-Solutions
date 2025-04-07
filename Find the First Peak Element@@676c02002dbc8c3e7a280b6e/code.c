@@ -30,4 +30,7 @@ int main(){
             return 0;
         }
     }
+    printf("%d\n",arr[i]);
+    return 0;
+    
 }
