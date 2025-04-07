@@ -13,6 +13,6 @@ int main(){
     else{
         odd++;
     }
-    printf("%d &d\n",even,odd);
+    printf("%d %d\n",even,odd);
     return 0;
 }
