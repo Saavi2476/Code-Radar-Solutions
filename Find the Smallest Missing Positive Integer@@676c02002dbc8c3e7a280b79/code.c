@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h> 
 int findMissingPositive(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         if (arr[i] <= 0 || arr[i] > n) {
